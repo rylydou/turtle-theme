@@ -8,7 +8,7 @@ Uses [Community Material Theme Darker High Contrast](https://marketplace.visuals
 
 ## Screenshots
 
-![C# code of a Music Player](https://github.com/CiberTurtle/Turtle-Theme/master/images/screenshots/cs_music-player.png)
+![C# code of a Music Player](https://github.com/CiberTurtle/Turtle-Theme/blob/master/images/screenshots/cs_music-player.png?raw=false)
 
 ## Recommended Settings
 
