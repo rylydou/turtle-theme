@@ -1,6 +1,6 @@
 # Turtle Theme
 
-_v1.0.0_
+_v1.0.2_
 
 A theme made by a turtle, for turtles.
 

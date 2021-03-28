@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.0.2] - 2021-03-28
+
+## Changed
+
+- Made the input field border dark gray so can be seen in Find & Replace and the Command Palette
+
 ## [1.0.1] - 2021-03-27
 
 ### Added
