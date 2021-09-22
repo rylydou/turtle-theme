@@ -1,5 +1,22 @@
 # Change Log
 
+## [1.1.0] - 2021-09-21
+
+## Added
+
+- Support for newer vscode features
+
+## Changed
+
+- Debug Console colors
+- Error and Warning colors
+- Tabbar color
+- Too many other things
+
+## Removed
+
+- Most outlines
+
 ## [1.0.2] - 2021-03-28
 
 ## Changed

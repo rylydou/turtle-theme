@@ -1,8 +1,8 @@
 {
 	"name": "turtle-theme",
 	"displayName": "Turtle Theme",
-	"version": "1.0.2",
-	"description": "A theme by a turtle, for turtles - using Community Material Theme Darker High Contrast syntax colors",
+	"version": "1.1.0",
+	"description": "A theme by a turtle, for turtles",
 	"publisher": "CiberTurtle",
 	"icon": "images/icon.png",
 	"galleryBanner": {
@@ -11,13 +11,6 @@
 	},
 	"categories": [
 		"Themes"
-	],
-	"keywords": [
-		"Theme",
-		"Dark",
-		"Flat",
-		"Orange",
-		"Turtle"
 	],
 	"engines": {
 		"vscode": "^1.54.0"
