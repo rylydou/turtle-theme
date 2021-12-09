@@ -1,5 +1,11 @@
 # Change Log
 
+## [1.1.1] - 2021-12-08
+
+## Changed
+
+- Minor Changes
+
 ## [1.1.1] - 2021-09-22
 
 ## Changed
@@ -49,4 +55,4 @@
 
 ## [0.0.1] - a long time ago...
 
-- _A Secret personal release (very spooky)_
+- _A secret personal release (very spooky)_

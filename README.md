@@ -8,7 +8,7 @@
 
 ```jsonc
 "workbench.colorCustomizations": {
-	"focusBorder": "#FF750450"
+	"focusBorder": "#FF750440"
 },
 ```
 
