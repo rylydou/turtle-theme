@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.2.0] - 2022-04-25
+
+- Added focus border
+- A bunch of other minor changes
+
 ## [1.1.1] - 2021-12-08
 
 ## Changed
@@ -33,7 +38,8 @@
 
 ## Changed
 
-- Made the input field border dark gray so can be seen in Find & Replace and the Command Palette
+- Made the input field border dark gray so can be seen in Find & Replace and the
+  Command Palette
 
 ## [1.0.1] - 2021-03-27
 
