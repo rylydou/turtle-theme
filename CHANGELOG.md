@@ -1,5 +1,10 @@
 # Change Log
 
+## [1.2.1] - 2022-08-17
+
+- Added coloring to debug variables
+- A few other minor changes
+
 ## [1.2.0] - 2022-04-25
 
 - Added focus border
