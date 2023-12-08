@@ -43,7 +43,7 @@
 		"package": "mkdir -p bin && vsce package -o bin",
 		"release": "vsce publish"
 	},
-	"dependencies": {
+	"devDependencies": {
 		"@vscode/vsce": "^2.22.0"
 	}
 }
