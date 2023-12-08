@@ -1,0 +1,207 @@
+{
+	"$schema": "vscode://schemas/color-theme",
+	"type": "dark",
+	"colors": {
+		"foreground": "#a0938e",
+		"disabledForeground": "#5a5353",
+		"focusBorder": "#8e478c",
+		"editor.foreground": "#cfc6b8",
+		"widget.border": "#5a5353",
+		"editorWidget.background": "#302c2e",
+		"icon.foreground": "#7d7071",
+		"editor.background": "#302c2e",
+		"sideBar.background": "#242022",
+		"activityBar.activeBackground": "#242022",
+		"activityBar.foreground": "#cfc6b8",
+		"activityBar.activeBorder": "#242022",
+		"activityBar.inactiveForeground": "#5a5353",
+		"activityBar.background": "#1f1b1d",
+		"titleBar.activeBackground": "#1f1b1d",
+		"titleBar.inactiveBackground": "#1f1b1d",
+		"editorGroupHeader.tabsBackground": "#242022",
+		"statusBar.background": "#1f1b1d",
+		"statusBar.debuggingBackground": "#564064",
+		"sideBar.foreground": "#a0938e",
+		"tab.border": "#302c2e",
+		"tab.inactiveBackground": "#242022",
+		"tab.inactiveForeground": "#7d7071",
+		"tab.activeForeground": "#cfc6b8",
+		"tab.hoverBackground": "#302c2e",
+		"tab.hoverForeground": "#cfc6b8",
+		"menu.foreground": "#cfc6b8",
+		"menu.background": "#302c2e",
+		"menu.border": "#5a5353",
+		"menu.separatorBackground": "#5a5353",
+		"menu.selectionBackground": "#564064",
+		"menu.selectionForeground": "#cfc6b8",
+		"list.hoverBackground": "#383336",
+		"list.activeSelectionBackground": "#302c2e",
+		"list.activeSelectionForeground": "#cfc6b8",
+		"list.activeSelectionIconForeground": "#a0938e",
+		"list.inactiveSelectionBackground": "#302c2e",
+		"list.inactiveSelectionForeground": "#cfc6b8",
+		"list.inactiveSelectionIconForeground": "#a0938e",
+		"list.dropBackground": "#302c2e",
+		"tree.inactiveIndentGuidesStroke": "#302c2e",
+		"tree.indentGuidesStroke": "#383336",
+		"button.foreground": "#fff",
+		"button.background": "#564064",
+		"button.hoverBackground": "#8e478c",
+		"button.border": "#8e478c",
+		"input.foreground": "#cfc6b8",
+		"input.background": "#302c2e00",
+		"input.border": "#5a5353",
+		"input.placeholderForeground": "#5a5353",
+		"inputOption.activeBackground": "#564064",
+		"inputOption.activeBorder": "#8e478c",
+		"inputOption.activeForeground": "#fff",
+		"inputOption.hoverBackground": "#5a5353",
+		"dropdown.background": "#302c2e00",
+		"dropdown.border": "#5a5353",
+		"dropdown.listBackground": "#302c2e",
+		"dropdown.foreground": "#cfc6b8",
+		"gitDecoration.ignoredResourceForeground": "#4f546b",
+		"editorBracketHighlight.foreground1": "#e6482e",
+		"editorBracketHighlight.foreground2": "#f47e1b",
+		"editorBracketHighlight.foreground3": "#f4b41b",
+		"editorBracketHighlight.foreground4": "#71aa34",
+		"editorBracketHighlight.foreground5": "#28ccdf",
+		"editorBracketHighlight.foreground6": "#cd6093",
+	},
+	// "semanticHighlighting": false,
+	// "semanticTokenColors": {
+	// 	"comment": "#7d7071",
+	// 	"type": "#28ccdf",
+	// 	"class": "#28ccdf",
+	// 	"struct": "#28ccdf",
+	// 	"number": "#cd6093",
+	// 	"constant": "#cd6093",
+	// 	"function": "#71aa34",
+	// 	"method": "#71aa34",
+	// 	"variable": "#cfc6b8",
+	// 	"property": "#cfc6b8",
+	// 	"parameter": "#cfc6b8",
+	// 	"variable.readonly": "#ffaeb6",
+	// },
+	"tokenColors": [
+		{
+			"scope": [
+				"comment",
+				"comment.line",
+				"comment.block",
+				"comment.block.documentation",
+				"punctuation.definition.comment",
+			],
+			"settings": {
+				"foreground": "#7d7071"
+			}
+		},
+		{
+			"scope": [
+				"string"
+			],
+			"settings": {
+				"foreground": "#f4b41b"
+			}
+		},
+		{
+			"name": "Escaped String Characters",
+			"scope": [
+				"constant.character"
+			],
+			"settings": {
+				"foreground": "#cd6093"
+			}
+		},
+		{
+			"name": "Numbers and Booleans",
+			"scope": [
+				"constant",
+				"constant.numeric"
+			],
+			"settings": {
+				"foreground": "#cd6093"
+			}
+		},
+		{
+			"scope": [
+				"variable",
+				"variable.other.object.property",
+				"meta.object.member",
+				"entity.name.variable",
+				"meta.function-call.arguments"
+			],
+			"settings": {
+				"foreground": "#cfc6b8"
+			}
+		},
+		{
+			"name": "Assignemnt Keywords and Classes",
+			"scope": [
+				"entity",
+				"meta.function",
+				"entity.name.type",
+				"support",
+				// "variable.other.object",
+				"keyword.type",
+				"storage.type.var",
+			],
+			"settings": {
+				"foreground": "#28ccdf"
+			}
+		},
+		{
+			"name": "Functions",
+			"scope": [
+				"entity.name.function",
+				"meta.function-call",
+				"entity.name.method",
+				"entity.name.type.delegate",
+				"support.function"
+			],
+			"settings": {
+				"foreground": "#71aa34"
+			}
+		},
+		{
+			"name": "Operators and Keywords",
+			"scope": [
+				"keyword",
+			],
+			"settings": {
+				"foreground": "#e6482e",
+			}
+		},
+		{
+			"name": "Definition",
+			"scope": [
+				"meta.class",
+				"storage.modifier",
+				"storage.type.function"
+			],
+			"settings": {
+				"foreground": "#e6482e"
+			}
+		},
+		{
+			"name": "Punctuation",
+			"scope": [
+				"punctuation",
+				"meta.brace"
+			],
+			"settings": {
+				"foreground": "#a0938e"
+			}
+		},
+		{
+			"name": "Lesser Punctuation",
+			"scope": [
+				"punctuation.separator",
+				"punctuation.terminator",
+			],
+			"settings": {
+				"foreground": "#7d7071"
+			}
+		}
+	]
+}

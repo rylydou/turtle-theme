@@ -26,9 +26,16 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Turtle Theme Normal",
+				"label": "Turtle Theme - Zuhgy",
 				"uiTheme": "vs-dark",
-				"path": "./themes/normal.json"
+				"id": "zuhgy",
+				"path": "./themes/zuhgy.json"
+			},
+			{
+				"id": "classic",
+				"label": "Turtle Theme - Classic",
+				"uiTheme": "vs-dark",
+				"path": "./themes/classic.json"
 			}
 		]
 	},
@@ -36,7 +43,7 @@
 		"package": "mkdir -p bin && vsce package -o bin",
 		"release": "vsce publish"
 	},
-	"devDependencies": {
-		"vsce": "^2.9.1"
+	"dependencies": {
+		"@vscode/vsce": "^2.22.0"
 	}
 }
