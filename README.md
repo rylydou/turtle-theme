@@ -1,6 +1,4 @@
-# Turtle Theme
-
-- A theme made by a turtle, for turtles
+A collection of themes by a turtle, for turtles
 
 ![Editor Screenshot](images/screenshots/editor.png)
 

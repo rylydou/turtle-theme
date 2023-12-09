@@ -8,18 +8,24 @@
 		"activityBar.inactiveForeground": "#5a5353",
 		"activityBarBadge.background": "#302c2e",
 		"activityBarBadge.foreground": "#fff",
+		"badge.background": "#302c2e",
+		"badge.foreground": "#cfc6b8",
 		"breadcrumb.activeSelectionForeground": "#cfc6b8",
 		"breadcrumb.focusForeground": "#cfc6b8",
 		"breadcrumb.foreground": "#7d7071",
 		"button.background": "#564064",
 		"button.foreground": "#fff",
 		"button.hoverBackground": "#8e478c",
+		"button.secondaryBackground": "#302c2e",
+		"button.secondaryForeground": "#cfc6b8",
+		"button.secondaryHoverBackground": "#5a5353",
+		"button.separator": "#302c2e",
 		"commandCenter.activeBackground": "#302c2e",
 		"commandCenter.activeBorder": "#302c2e",
 		"commandCenter.activeForeground": "#cfc6b8",
 		"commandCenter.background": "#1f1b1d",
 		"commandCenter.border": "#302c2e",
-		"commandCenter.debuggingBackground": "#564064",
+		"commandCenter.debuggingBackground": "#39314b",
 		"commandCenter.inactiveBorder": "#302c2e",
 		"debugIcon.breakpointForeground": "#e6482e",
 		"debugIcon.continueForeground": "#71aa34",
@@ -58,6 +64,7 @@
 		"editorCursor.foreground": "#dff6f5",
 		"editorGroup.border": "#1f1b1d",
 		"editorGroup.dropBackground": "#56406480",
+		"editorGroup.emptyBackground": "#1f1b1d",
 		"editorGroupHeader.tabsBackground": "#242022",
 		"editorGutter.addedBackground": "#b6d53c",
 		"editorGutter.deletedBackground": "#e6482e",
@@ -97,6 +104,10 @@
 		"inputOption.activeBorder": "#8e478c",
 		"inputOption.activeForeground": "#fff",
 		"inputOption.hoverBackground": "#564064",
+		"keybindingLabel.background": "#4f546b",
+		"keybindingLabel.border": "#827094",
+		"keybindingLabel.bottomBorder": "#827094",
+		"keybindingLabel.foreground": "#fff",
 		"list.activeSelectionBackground": "#302c2e",
 		"list.activeSelectionForeground": "#cfc6b8",
 		"list.activeSelectionIconForeground": "#a0938e",
@@ -111,9 +122,9 @@
 		"menu.selectionBackground": "#564064",
 		"menu.selectionForeground": "#fff",
 		"menu.separatorBackground": "#5a5353",
-		"menubar.selectionBackground": "#564064",
+		"menubar.selectionBackground": "#5a5353",
 		"menubar.selectionForeground": "#cfc6b8",
-		"panel.border": "#5a5353",
+		"panel.border": "#242022",
 		"panelSection.dropBackground": "#56406480",
 		"panelSectionHeader.background": "#302c2e",
 		"panelTitle.activeForeground": "#cfc6b8",
@@ -125,6 +136,7 @@
 		"quickInputList.focusForeground": "#fff",
 		"scrollbar.shadow": "#0000",
 		"selection.background": "#564064",
+		"settings.modifiedItemIndicator": "#8e478c",
 		"sideBar.background": "#242022",
 		"sideBar.dropBackground": "#56406480",
 		"sideBar.foreground": "#a0938e",
@@ -164,8 +176,8 @@
 		"textLink.foreground": "#ffaeb6",
 		"titleBar.activeBackground": "#1f1b1d",
 		"titleBar.inactiveBackground": "#1f1b1d",
-		"toolbar.activeBackground": "#383336",
-		"toolbar.hoverBackground": "#383336",
+		"toolbar.activeBackground": "#5a5353",
+		"toolbar.hoverBackground": "#5a5353",
 		"tree.inactiveIndentGuidesStroke": "#302c2e",
 		"tree.indentGuidesStroke": "#383336",
 		"widget.border": "#5a5353"
@@ -251,31 +263,37 @@
 				"meta.function-call",
 				"entity.name.method",
 				"entity.name.type.delegate",
-				"support.function"
+				"support.function",
 			],
 			"settings": {
 				"foreground": "#b6d53c",
 			}
 		},
 		{
-			"name": "Operators and Keywords",
+			"name": "Keywords",
 			"scope": [
 				"keyword",
-			],
-			"settings": {
-				"foreground": "#e6482e",
-			}
-		},
-		{
-			"name": "Definition",
-			"scope": [
-				"meta.class",
+				// "meta.class",
 				"storage.modifier",
 				"storage.type.function",
 				"storage.type",
+				"keyword.operator.new",
+				"keyword.operator.expression",
+				"keyword.operator.wordlike",
 			],
 			"settings": {
-				"foreground": "#e6482e"
+				"foreground": "#e6482e",
+				"fontStyle": "italic",
+			}
+		},
+		{
+			"name": "Operators",
+			"scope": [
+				"keyword.operator",
+				"storage.type.function.arrow",
+			],
+			"settings": {
+				"fontStyle": "",
 			}
 		},
 		{
@@ -362,6 +380,43 @@
 			],
 			"settings": {
 				"foreground": "#cd6093"
+			}
+		},
+		{
+			"name": "Markup - Italic",
+			"scope": [
+				"markup.italic",
+			],
+			"settings": {
+				"fontStyle": "italic"
+			}
+		},
+		{
+			"name": "Markup - Bold",
+			"scope": [
+				"markup.bold",
+			],
+			"settings": {
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Markup - Italic and Bold",
+			"scope": [
+				"markup.italic markup.bold",
+			],
+			"settings": {
+				"fontStyle": "italic bold"
+			}
+		},
+		{
+			"name": "Markup - Link",
+			"scope": [
+				"markup.underline.link",
+			],
+			"settings": {
+				"foreground": "#b6d53c",
+				"fontStyle": "underline"
 			}
 		},
 	]
