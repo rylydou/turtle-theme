@@ -26,16 +26,22 @@
 	"contributes": {
 		"themes": [
 			{
-				"label": "Turtle Theme - Zuhgy",
+				"id": "zuhgy-dark",
+				"label": "Turtle Theme - Zuhgy Dark",
 				"uiTheme": "vs-dark",
-				"id": "zuhgy",
-				"path": "./themes/zuhgy.json"
+				"path": "./themes/zuhgy-dark.json"
 			},
 			{
-				"id": "classic",
-				"label": "Turtle Theme - Classic",
+				"id": "zuhgy-light",
+				"label": "Turtle Theme - Zuhgy Light",
+				"uiTheme": "vs",
+				"path": "./themes/zuhgy-light.json"
+			},
+			{
+				"id": "classic-dark",
+				"label": "Turtle Theme - Classic Dark",
 				"uiTheme": "vs-dark",
-				"path": "./themes/classic.json"
+				"path": "./themes/classic-dark.json"
 			}
 		]
 	},
