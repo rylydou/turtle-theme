@@ -9,7 +9,7 @@
 	"bugs": "https://github.com/CiberTurtle/Turtle-Theme/issues",
 	"repository": "https://github.com/CiberTurtle/Turtle-Theme",
 	"galleryBanner": {
-		"color": "#FF7504",
+		"color": "#cd6093",
 		"theme": "dark"
 	},
 	"categories": [
@@ -21,31 +21,36 @@
 	"contributes": {
 		"themes": [
 			{
-				"id": "zuhgy-dark",
-				"label": "Turtle Theme - Zuhgy Dark",
+				"id": "zughy-dark",
+				"label": "Turtle Theme - Zughy Dark",
 				"uiTheme": "vs-dark",
-				"path": "./themes/zuhgy-dark.json"
+				"path": "./themes/zughy-dark.json"
 			},
 			{
-				"id": "zuhgy-light",
-				"label": "Turtle Theme - Zuhgy Light",
+				"id": "zughy-light",
+				"label": "Turtle Theme - Zughy Light",
 				"uiTheme": "vs",
-				"path": "./themes/zuhgy-light.json"
+				"path": "./themes/zughy-light.json"
 			},
 			{
-				"id": "classic-dark",
-				"label": "Turtle Theme - Classic Dark",
+				"id": "classic",
+				"label": "Turtle Theme - Classic (unmaintained)",
 				"uiTheme": "vs-dark",
-				"path": "./themes/classic-dark.json"
+				"path": "./themes/classic.json"
 			}
 		]
 	},
 	"scripts": {
+		"lint": "ts-node scripts/lint.ts",
 		"pack": "mkdir -p dist && vsce pack -o dist",
 		"release": "vsce publish",
-		"dogfood": "vsce pack -o dist/dogfood.vsix && code --install-extension dist/dogfood.vsix"
+		"dogfood": "vsce pack -o dist/dogfood.vsix && code --install-extension dist/dogfood.vsix --force"
 	},
 	"devDependencies": {
-		"@vscode/vsce": "^2.22.0"
+		"@types/node": "^20.10.4",
+		"@vscode/vsce": "^2.22.0",
+		"json5": "^2.2.3",
+		"ts-node": "^10.9.2",
+		"typescript": "^5.3.3"
 	}
 }

@@ -323,7 +323,7 @@
 		"textLink.foreground": "#FF7504",
 		"titleBar.activeBackground": "#111",
 		"titleBar.activeForeground": "#CCC",
-		"titleBar.border": "#0000",
+		"titleBar.border": "#302c2e",
 		"titleBar.inactiveBackground": "#111",
 		"titleBar.inactiveForeground": "#888",
 		"toolbar.activeBackground": "#282828",
@@ -349,8 +349,8 @@
 		{
 			"name": "Variables",
 			"scope": [
-				"variable",
-				"string constant.other.placeholder"
+				"string constant.other.placeholder",
+				"variable"
 			],
 			"settings": {
 				"foreground": "#EEE"
@@ -397,8 +397,8 @@
 			"name": "Keyword, Storage",
 			"scope": [
 				"keyword",
-				"storage.type",
-				"storage.modifier"
+				"storage.modifier",
+				"storage.type"
 			],
 			"settings": {
 				"foreground": "#C792EA"
@@ -417,17 +417,17 @@
 		{
 			"name": "Operator, Misc",
 			"scope": [
-				"keyword.control",
 				"constant.other.color",
-				"punctuation.definition.tag",
+				"keyword.control",
+				"keyword.other.substitution",
+				"keyword.other.template",
 				"punctuation",
-				"punctuation.separator.inheritance.php",
-				"punctuation.definition.tag.html",
+				"punctuation.definition.tag",
 				"punctuation.definition.tag.begin.html",
 				"punctuation.definition.tag.end.html",
+				"punctuation.definition.tag.html",
 				"punctuation.section.embedded",
-				"keyword.other.template",
-				"keyword.other.substitution"
+				"punctuation.separator.inheritance.php"
 			],
 			"settings": {
 				"foreground": "#89DDFF"
@@ -446,8 +446,8 @@
 			"name": "Tag",
 			"scope": [
 				"entity.name.tag",
-				"meta.tag.sgml",
-				"markup.deleted.git_gutter"
+				"markup.deleted.git_gutter",
+				"meta.tag.sgml"
 			],
 			"settings": {
 				"foreground": "#FF5555"
@@ -457,9 +457,9 @@
 			"name": "Function, Special Method",
 			"scope": [
 				"entity.name.function",
-				"variable.function",
+				"keyword.other.special-method",
 				"support.function",
-				"keyword.other.special-method"
+				"variable.function"
 			],
 			"settings": {
 				"foreground": "#82AAFF"
@@ -486,8 +486,8 @@
 		{
 			"name": "Other Variable, String Link",
 			"scope": [
-				"support.other.variable",
-				"string.other.link"
+				"string.other.link",
+				"support.other.variable"
 			],
 			"settings": {
 				"foreground": "#F07178"
@@ -496,13 +496,13 @@
 		{
 			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
 			"scope": [
-				"constant.numeric",
-				"constant.language",
-				"support.constant",
 				"constant.character",
 				"constant.escape",
+				"constant.language",
+				"constant.numeric",
+				"keyword.other",
 				"keyword.other.unit",
-				"keyword.other"
+				"support.constant"
 			],
 			"settings": {
 				"foreground": "#F78C6C"
@@ -511,8 +511,8 @@
 		{
 			"name": "Number, Constant, Function Argument, Tag Attribute, Embedded",
 			"scope": [
-				"variable.parameter.function.language.special",
-				"variable.parameter"
+				"variable.parameter",
+				"variable.parameter.function.language.special"
 			],
 			"settings": {
 				"foreground": "#FF5370"
@@ -521,13 +521,13 @@
 		{
 			"name": "String, Symbols, Inherited Class, Markup Heading",
 			"scope": [
-				"string",
-				"constant.other.symbol",
 				"constant.other.key",
+				"constant.other.symbol",
 				"entity.other.inherited-class",
 				"markup.heading",
 				"markup.inserted.git_gutter",
-				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js"
+				"meta.group.braces.curly constant.other.object.key.js string.unquoted.label.js",
+				"string"
 			],
 			"settings": {
 				"foreground": "#C3E88D"
@@ -537,12 +537,12 @@
 			"name": "Class, Support",
 			"scope": [
 				"entity.name",
-				"support.type",
-				"support.class",
-				"support.other.namespace.use.php",
-				"meta.use.php",
-				"support.other.namespace.php",
 				"markup.changed.git_gutter",
+				"meta.use.php",
+				"support.class",
+				"support.other.namespace.php",
+				"support.other.namespace.use.php",
+				"support.type",
 				"support.type.sys-types"
 			],
 			"settings": {
@@ -562,11 +562,11 @@
 			"name": "CSS Class and Support",
 			"scope": [
 				"source.css support.type.property-name",
+				"source.less support.type.property-name",
+				"source.postcss support.type.property-name",
 				"source.sass support.type.property-name",
 				"source.scss support.type.property-name",
-				"source.less support.type.property-name",
-				"source.stylus support.type.property-name",
-				"source.postcss support.type.property-name"
+				"source.stylus support.type.property-name"
 			],
 			"settings": {
 				"foreground": "#B2CCD6"
@@ -689,9 +689,9 @@
 		{
 			"name": "URL",
 			"scope": [
-				"*url*",
 				"*link*",
-				"*uri*"
+				"*uri*",
+				"*url*"
 			],
 			"settings": {
 				"fontStyle": "underline"
@@ -802,8 +802,8 @@
 		{
 			"name": "Markdown - Plain",
 			"scope": [
-				"text.html.markdown",
-				"punctuation.definition.list_item.markdown"
+				"punctuation.definition.list_item.markdown",
+				"text.html.markdown"
 			],
 			"settings": {
 				"foreground": "#EEE"
@@ -870,10 +870,10 @@
 			"name": "Markup - Bold-Italic",
 			"scope": [
 				"markup.bold markup.italic",
-				"markup.italic markup.bold",
-				"markup.quote markup.bold",
 				"markup.bold markup.italic string",
+				"markup.italic markup.bold",
 				"markup.italic markup.bold string",
+				"markup.quote markup.bold",
 				"markup.quote markup.bold string"
 			],
 			"settings": {
