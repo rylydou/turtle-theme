@@ -16,7 +16,7 @@ for (const file_name of fs.readdirSync(THEMES_DIR)) {
 		let theme = JSON5.parse(file) as CodeColorTheme
 		theme = await sort_theme(theme)
 
-		const str = JSON.stringify(theme, null, '\t')
+		const str = JSON.stringify(theme, null, '\t') + '\n'
 		fsp.writeFile(file_path, str, { encoding: 'utf-8' })
 
 		console.log(file_name)
