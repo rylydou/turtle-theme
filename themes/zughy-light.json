@@ -276,6 +276,7 @@
 			"name": "Variables",
 			"scope": [
 				"entity.name.tag",
+				"entity.name.tag.yaml",
 				"entity.name.variable",
 				"meta.function-call.arguments",
 				"meta.object.member",
@@ -346,10 +347,11 @@
 		{
 			"name": "Markup",
 			"scope": [
-				"entity.name.tag.localname.xml",
-				"entity.name.tag.namespace.xml",
-				"entity.name.tag.xml",
-				"text.html.derivative entity.name.tag.html"
+				"entity.name.tag",
+				"meta.tag.end",
+				"meta.tag.start",
+				"meta.tag.structure.end",
+				"meta.tag.structure.start"
 			],
 			"settings": {
 				"foreground": "#a93b3b"
@@ -358,6 +360,7 @@
 		{
 			"name": "Punctuation",
 			"scope": [
+				"keyword.operator.type.annotation",
 				"meta.brace",
 				"punctuation"
 			],

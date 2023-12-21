@@ -129,6 +129,13 @@
 		"minimapSlider.activeBackground": "#5a535380",
 		"minimapSlider.background": "#5a535340",
 		"minimapSlider.hoverBackground": "#5a535380",
+		"notificationCenter.border": "#302c2e",
+		"notificationCenterHeader.background": "#242022",
+		"notificationCenterHeader.foreground": "#a0938e",
+		"notificationToast.border": "#302c2e",
+		"notifications.background": "#242022",
+		"notifications.border": "#302c2e",
+		"notifications.foreground": "#a0938e",
 		"panel.background": "#242022",
 		"panel.border": "#302c2e",
 		"panelSection.dropBackground": "#56406480",
@@ -262,6 +269,7 @@
 			"name": "Variables",
 			"scope": [
 				"entity.name.tag",
+				"entity.name.tag.yaml",
 				"entity.name.variable",
 				"meta.function-call.arguments",
 				"meta.object.member",
@@ -334,10 +342,11 @@
 		{
 			"name": "Markup",
 			"scope": [
-				"entity.name.tag.localname.xml",
-				"entity.name.tag.namespace.xml",
-				"entity.name.tag.xml",
-				"text.html.derivative entity.name.tag.html"
+				"entity.name.tag",
+				"meta.tag.end",
+				"meta.tag.start",
+				"meta.tag.structure.end",
+				"meta.tag.structure.start"
 			],
 			"settings": {
 				"foreground": "#e6482e"
@@ -346,6 +355,7 @@
 		{
 			"name": "Punctuation",
 			"scope": [
+				"keyword.operator.type.annotation",
 				"meta.brace",
 				"punctuation"
 			],
