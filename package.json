@@ -1,7 +1,7 @@
 {
 	"name": "turtle-theme",
 	"displayName": "Turtle Theme Collection",
-	"version": "3.0.0",
+	"version": "4.0.0",
 	"description": "A collection of themes by a turtle, for turtles",
 	"publisher": "CiberTurtle",
 	"icon": "images/icon.png",
@@ -47,7 +47,7 @@
 		]
 	},
 	"scripts": {
-		"lint": "ts-node scripts/lint.ts",
+		"lint": "bunx scripts/lint.ts",
 		"pack": "mkdir -p dist && vsce pack -o dist",
 		"release": "vsce publish",
 		"dogfood": "vsce pack -o dist/dogfood.vsix && code --install-extension dist/dogfood.vsix --force"
@@ -56,7 +56,6 @@
 		"@types/node": "^20.11.4",
 		"@vscode/vsce": "^2.22.0",
 		"json5": "^2.2.3",
-		"ts-node": "^10.9.2",
 		"typescript": "^5.3.3"
 	}
 }

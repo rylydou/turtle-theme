@@ -1,6 +1,10 @@
 # Change Log
 
 
+## `4.0.0` - 2024-1-16
+- New build system
+
+
 ## `3.0.0` - 2024-1-16
 - Tweaked Zughy themes
 - Added a new Zughy Light theme and renamed the old theme to Zughy Paper

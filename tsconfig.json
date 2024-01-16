@@ -1,10 +1,15 @@
 {
 	"compilerOptions": {
-		"rootDir": "scripts",
+		"rootDir": "src",
 		"module": "NodeNext",
 		"target": "ES2022",
 		"lib": [
 			"ES2022",
 		],
+		"paths": {
+			"@/*": [
+				"../src"
+			],
+		}
 	},
 }
