@@ -40,7 +40,7 @@
 		"debugIcon.stepOverForeground": "#cfc6b8",
 		"debugIcon.stopForeground": "#e6482e",
 		"disabledForeground": "#5a5353",
-		"dropdown.background": "#302c2e00",
+		"dropdown.background": "#302c2e",
 		"dropdown.border": "#5a5353",
 		"dropdown.foreground": "#cfc6b8",
 		"dropdown.listBackground": "#302c2e",
@@ -268,10 +268,11 @@
 		{
 			"name": "Variables",
 			"scope": [
-				"entity.name.tag",
+				"constant.other.color",
 				"entity.name.tag.yaml",
 				"entity.name.variable",
 				"meta.function-call.arguments",
+				"meta.jsx.children.js.jsx",
 				"meta.object.member",
 				"source.css support.type.property-name",
 				"source.less support.type.property-name",
@@ -279,6 +280,7 @@
 				"source.sass support.type.property-name",
 				"source.scss support.type.property-name",
 				"source.stylus support.type.property-name",
+				"support.constant.color",
 				"variable",
 				"variable.other.object.property"
 			],
@@ -306,7 +308,9 @@
 				"entity.name.function",
 				"entity.name.method",
 				"entity.name.type.delegate",
+				"entity.other.attribute-name.pseudo-class",
 				"meta.function-call",
+				"meta.selector.pseudo-class",
 				"support.function"
 			],
 			"settings": {
@@ -355,9 +359,11 @@
 		{
 			"name": "Punctuation",
 			"scope": [
+				"keyword.operator.combinator",
 				"keyword.operator.type.annotation",
 				"meta.brace",
-				"punctuation"
+				"punctuation",
+				"punctuation.definition.interpolation"
 			],
 			"settings": {
 				"foreground": "#a0938e"

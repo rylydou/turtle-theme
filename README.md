@@ -9,9 +9,13 @@ _**“A collection of themes by a turtle, for turtles.”**_
 ![A screenshot of the "Zughy Dark" theme](images/zughy-dark.png)
 > The primary theme of the collection.
 
+### Zughy Paper
+![A screenshot of the "Zughy Paper" theme](images/zughy-paper.png)
+> Great for on the go coding where screen glare can become a serious problem!
+
 ### Zughy Light
 ![A screenshot of the "Zughy Light" theme](images/zughy-light.png)
-> Great for on the go coding where screen glare can become a serious problem!
+> Same as Zughy Paper, but with background colors from Solarized Light.
 
 ### Classic
 ![A screenshot of the "Classic" theme](images/classic.png)

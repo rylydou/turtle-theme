@@ -1,6 +1,11 @@
 # Change Log
 
 
+## `3.0.0` - 2024-1-16
+- Tweaked Zughy themes
+- Added a new Zughy Light theme and renamed the old theme to Zughy Paper
+
+
 ## `2.0.0` - 2023-12-20
 - Tweaked Zughy themes
 
