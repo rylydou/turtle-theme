@@ -1,7 +1,7 @@
 {
 	"name": "turtle-theme",
 	"displayName": "Turtle Theme Collection",
-	"version": "4.0.0",
+	"version": "4.0.1",
 	"description": "A collection of themes by a turtle, for turtles",
 	"publisher": "CiberTurtle",
 	"icon": "images/icon.png",
@@ -47,7 +47,7 @@
 		]
 	},
 	"scripts": {
-		"lint": "bunx scripts/lint.ts",
+		"build": "bun src/build.ts",
 		"pack": "mkdir -p dist && vsce pack -o dist",
 		"release": "vsce publish",
 		"dogfood": "vsce pack -o dist/dogfood.vsix && code --install-extension dist/dogfood.vsix --force"

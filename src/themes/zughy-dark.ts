@@ -11,7 +11,7 @@ export default {
 		'ui.border': '#302c2e',
 		'ui.drop': '#8e478c40',
 		'ui.focus': '#cd6093',
-		'ui.debug.bg': '#564064',
+		'ui.debug.bg': '#39314b',
 		'ui.debug.fg': '#cfc6b8',
 		'ui.accent.bg': '#564064',
 		'ui.accent.bg.hover': '#8e478c',

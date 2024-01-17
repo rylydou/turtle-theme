@@ -9,8 +9,8 @@ export default {
 	template: template,
 	colors: {
 		'ui.border': '#ded8c5',
-		'ui.drop': '#8e478c40',
-		'ui.focus': '#cd6093',
+		'ui.drop': '#a93b3b40',
+		'ui.focus': '#a93b3b',
 		'ui.debug.bg': '#564064',
 		'ui.debug.fg': '#cfc6b8',
 		'ui.accent.bg': '#f4cca1',
