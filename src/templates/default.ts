@@ -69,11 +69,14 @@ export default {
 		'editorCursor.foreground': 'editor.cursor.fg',
 		'editorGroup.border': 'ui.bg',
 		'editorGroup.dropBackground': 'ui.drop',
+		'editorGroup.emptyBackground': 'ui.bg',
+		'editorGroup.focusedEmptyBorder': 'ui.accent',
 		'editorGroupHeader.tabsBackground': 'ui.bg',
 		'editorGroupHeader.tabsBorder': 'ui.border',
 		'editorHoverWidget.background': 'editor.bg',
 		'editorHoverWidget.border': 'editor.border',
 		'editorHoverWidget.foreground': 'editor.fg',
+		'editorHoverWidget.highlightForeground': 'ui.accent',
 		'editorLightBulb.foreground': 'code.yellow',
 		'editorLineNumber.activeForeground': 'editor.gutter.active',
 		'editorLineNumber.foreground': 'editor.gutter',
@@ -131,9 +134,16 @@ export default {
 		'menu.separatorBackground': 'editor.border',
 		'menubar.selectionBackground': 'ui.accent.bg',
 		'menubar.selectionForeground': 'ui.accent.fg',
+		'notificationCenter.border': 'editor.border',
+		'notificationCenterHeader.background': 'editor.bg',
+		'notificationCenterHeader.foreground': 'editor.fg',
+		'notifications.background': 'editor.bg',
+		'notifications.border': 'editor.border',
+		'notifications.foreground': 'editor.fg',
 		'panel.background': 'ui.bg',
 		'panel.border': 'ui.border',
 		'panelSection.dropBackground': 'ui.drop',
+		'panelSectionHeader.background': 'ui.bg',
 		'panelTitle.activeForeground': 'ui.fg',
 		'panelTitle.inactiveForeground': 'ui.mg.less',
 		'pickerGroup.border': 'editor.border',
@@ -190,7 +200,6 @@ export default {
 		'toolbar.hoverBackground': 'ui.bg.hover',
 		'widget.border': 'editor.border',
 		'widget.shadow': 'shadow',
-		"editorHoverWidget.highlightForeground": "ui.accent",
 	},
 	tokens: [
 		{
@@ -200,39 +209,40 @@ export default {
 				'comment.block',
 				'comment.block.documentation',
 				'comment.line',
-				'punctuation.definition.comment'
+				'punctuation.definition.comment',
 			],
 			'settings': {
-				'foreground': 'code.comment'
-			}
+				'foreground': 'code.comment',
+			},
 		},
 		{
 			'name': 'String',
 			'scope': [
-				'string'
+				'string',
 			],
 			'settings': {
-				'foreground': 'code.yellow'
-			}
+				'foreground': 'code.yellow',
+			},
 		},
 		{
 			'name': 'Escaped String Characters',
 			'scope': [
-				'constant.character'
+				'constant.character',
 			],
 			'settings': {
-				'foreground': 'code.pink'
-			}
+				'foreground': 'code.pink',
+			},
 		},
 		{
 			'name': 'Numbers and Booleans',
 			'scope': [
 				'constant.language',
-				'constant.numeric'
+				'constant.numeric',
+				'constant.other',
 			],
 			'settings': {
-				'foreground': 'code.pink'
-			}
+				'foreground': 'code.pink',
+			},
 		},
 		{
 			'name': 'Variables',
@@ -251,10 +261,10 @@ export default {
 				'source.stylus support.type.property-name',
 				'support.constant.color',
 				'variable',
-				'variable.other.object.property'
+				'variable.other.object.property',
 			],
 			'settings': {
-				'foreground': 'editor.fg'
+				'foreground': 'editor.fg',
 			}
 		},
 		{
@@ -264,11 +274,10 @@ export default {
 				'entity.name.type',
 				'keyword.type',
 				'meta.function',
-				'storage.type.var',
-				'support'
+				'support',
 			],
 			'settings': {
-				'foreground': 'code.blue'
+				'foreground': 'code.blue',
 			}
 		},
 		{
@@ -280,11 +289,11 @@ export default {
 				'entity.other.attribute-name.pseudo-class',
 				'meta.function-call',
 				'meta.selector.pseudo-class',
-				'support.function'
+				'support.function',
 			],
 			'settings': {
-				'foreground': 'code.green'
-			}
+				'foreground': 'code.green',
+			},
 		},
 		{
 			'name': 'Keywords',
@@ -295,22 +304,23 @@ export default {
 				'keyword.operator.wordlike',
 				'storage.modifier',
 				'storage.type',
-				'storage.type.function'
+				'storage.type.function',
+				'entity.name.function.decorator',
 			],
 			'settings': {
 				'foreground': 'code.red',
-				'fontStyle': 'italic'
-			}
+				'fontStyle': 'italic',
+			},
 		},
 		{
 			'name': 'Operators',
 			'scope': [
 				'keyword.operator',
-				'storage.type.function.arrow'
+				'storage.type.function.arrow',
 			],
 			'settings': {
-				'fontStyle': ''
-			}
+				'fontStyle': '',
+			},
 		},
 		{
 			'name': 'Markup',
@@ -319,11 +329,11 @@ export default {
 				'meta.tag.end',
 				'meta.tag.start',
 				'meta.tag.structure.end',
-				'meta.tag.structure.start'
+				'meta.tag.structure.start',
 			],
 			'settings': {
-				'foreground': 'code.red'
-			}
+				'foreground': 'code.red',
+			},
 		},
 		{
 			'name': 'Punctuation',
@@ -332,30 +342,32 @@ export default {
 				'keyword.operator.type.annotation',
 				'meta.brace',
 				'punctuation',
-				'punctuation.definition.interpolation'
+				'punctuation.definition.interpolation',
 			],
 			'settings': {
-				'foreground': 'code.punctuation'
-			}
+				'foreground': 'code.punctuation',
+			},
 		},
 		{
 			'name': 'Lesser Punctuation',
 			'scope': [
 				'punctuation.separator',
-				'punctuation.terminator'
+				'punctuation.terminator',
+				'meta.function.parameters.gdscript',
+				'meta.function.gdscript',
 			],
 			'settings': {
-				'foreground': 'code.punctuation.less'
-			}
+				'foreground': 'code.punctuation.less',
+			},
 		},
 		{
 			'name': 'JSON Key - Level 0',
 			'scope': [
-				'source.json meta.structure.dictionary.json support.type.property-name.json'
+				'source.json meta.structure.dictionary.json support.type.property-name.json',
 			],
 			'settings': {
-				'foreground': 'code.red'
-			}
+				'foreground': 'code.red',
+			},
 		},
 		{
 			'name': 'JSON Key - Level 1',
@@ -363,101 +375,101 @@ export default {
 				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'
 			],
 			'settings': {
-				'foreground': 'code.orange'
-			}
+				'foreground': 'code.orange',
+			},
 		},
 		{
 			'name': 'JSON Key - Level 2',
 			'scope': [
-				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'
+				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 			],
 			'settings': {
-				'foreground': 'code.yellow'
-			}
+				'foreground': 'code.yellow',
+			},
 		},
 		{
 			'name': 'JSON Key - Level 3',
 			'scope': [
-				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'
+				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 			],
 			'settings': {
-				'foreground': 'code.green'
-			}
+				'foreground': 'code.green',
+			},
 		},
 		{
 			'name': 'JSON Key - Level 4',
 			'scope': [
-				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'
+				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 			],
 			'settings': {
-				'foreground': 'code.blue'
-			}
+				'foreground': 'code.blue',
+			},
 		},
 		{
 			'name': 'JSON Key - Level 5',
 			'scope': [
-				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json'
+				'source.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json meta.structure.dictionary.value.json meta.structure.dictionary.json support.type.property-name.json',
 			],
 			'settings': {
-				'foreground': 'code.pink'
-			}
+				'foreground': 'code.pink',
+			},
 		},
 		{
 			'name': 'Markup - Italic',
 			'scope': [
-				'markup.italic'
+				'markup.italic',
 			],
 			'settings': {
-				'fontStyle': 'italic'
-			}
+				'fontStyle': 'italic',
+			},
 		},
 		{
 			'name': 'Markup - Bold',
 			'scope': [
-				'markup.bold'
+				'markup.bold',
 			],
 			'settings': {
-				'fontStyle': 'bold'
-			}
+				'fontStyle': 'bold',
+			},
 		},
 		{
 			'name': 'Markup - Italic and Bold',
 			'scope': [
-				'markup.italic markup.bold'
+				'markup.italic markup.bold',
 			],
 			'settings': {
-				'fontStyle': 'italic bold'
-			}
+				'fontStyle': 'italic bold',
+			},
 		},
 		{
 			'name': 'Markup - Underline',
 			'scope': [
-				'markup.underline'
+				'markup.underline',
 			],
 			'settings': {
-				'fontStyle': 'underline'
-			}
+				'fontStyle': 'underline',
+			},
 		},
 		{
 			'name': 'Markup - Link',
 			'scope': [
 				'markup.link',
-				'markup.underline.link'
+				'markup.underline.link',
 			],
 			'settings': {
 				'foreground': 'code.green',
-				'fontStyle': 'underline'
-			}
+				'fontStyle': 'underline',
+			},
 		},
 		{
 			'name': 'Markup - Code',
 			'scope': [
 				'markup.fenced_code',
-				'markup.inline.raw'
+				'markup.inline.raw',
 			],
 			'settings': {
-				'foreground': 'code.pink'
-			}
-		}
+				'foreground': 'code.pink',
+			},
+		},
 	],
 } satisfies ThemeTemplate

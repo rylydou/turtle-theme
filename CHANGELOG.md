@@ -1,6 +1,10 @@
 # Change Log
 
 
+## `4.0.2` - 2024-4-5
+- Added missing colors and tweaked code colors
+
+
 ## `4.0.1` - 2024-1-16
 - Tweaked some colors
 
