@@ -1,6 +1,10 @@
 # Change Log
 
 
+## `4.0.3` - 2024-4-8
+- Fix JSX coloring
+
+
 ## `4.0.2` - 2024-4-5
 - Added missing colors and tweaked code colors
 

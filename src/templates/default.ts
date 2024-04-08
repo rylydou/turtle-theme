@@ -262,6 +262,7 @@ export default {
 				'support.constant.color',
 				'variable',
 				'variable.other.object.property',
+				'meta.jsx.children',
 			],
 			'settings': {
 				'foreground': 'editor.fg',
