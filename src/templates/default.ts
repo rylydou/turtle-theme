@@ -1,4 +1,4 @@
-import { ThemeTemplate } from '../types'
+import { ThemeTemplate } from '../types';
 
 
 export default {
@@ -118,8 +118,6 @@ export default {
 		'keybindingLabel.border': 'ui.border',
 		'keybindingLabel.bottomBorder': 'ui.border',
 		'keybindingLabel.foreground': 'ui.fg',
-		'list.activeSelectionBackground': 'ui.bg.active',
-		'list.activeSelectionForeground': 'ui.fg',
 		'list.activeSelectionIconForeground': 'ui.mg',
 		'list.dropBackground': 'ui.drop',
 		'list.hoverBackground': 'ui.bg.hover',
@@ -200,6 +198,29 @@ export default {
 		'toolbar.hoverBackground': 'ui.bg.hover',
 		'widget.border': 'editor.border',
 		'widget.shadow': 'shadow',
+		'commentsView.resolvedIcon': 'editor.mg',
+		'commentsView.unresolvedIcon': 'ui.accent',
+		'editorActionList.background': 'editor.bg',
+		'editorGutter.commentGlyphForeground': 'editor.fg',
+		'editorGutter.commentRangeForeground': 'ui.bg',
+		'editorGutter.commentUnresolvedGlyphForeground': 'ui.accent',
+		'list.activeSelectionBackground': 'ui.accent.bg',
+		'list.activeSelectionForeground': 'ui.accent.fg',
+		'peekView.border': 'ui.focus',
+		'peekViewEditor.background': 'editor.peek.bg',
+		'peekViewEditor.matchHighlightBackground': 'editor.find.match.bg',
+		'peekViewEditor.matchHighlightBorder': 'editor.find.match.border',
+		'peekViewEditorStickyScroll.background': 'ui.border',
+		'peekViewResult.background': 'ui.bg',
+		'peekViewResult.fileForeground': 'ui.fg',
+		'peekViewResult.lineForeground': 'ui.mg',
+		'peekViewResult.matchHighlightBackground': 'ui.accent.bg',
+		'peekViewTitle.background': 'ui.bg',
+		'peekViewTitleDescription.foreground': 'ui.mg.less',
+		'peekViewTitleLabel.foreground': 'ui.fg',
+		'scrollbarSlider.activeBackground': 'ui.scrollbar',
+		'scrollbarSlider.background': 'ui.scrollbar',
+		'scrollbarSlider.hoverBackground': 'ui.scrollbar.hover',
 	},
 	tokens: [
 		{
@@ -473,4 +494,4 @@ export default {
 			},
 		},
 	],
-} satisfies ThemeTemplate
+} satisfies ThemeTemplate;

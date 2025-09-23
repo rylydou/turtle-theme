@@ -1,26 +1,24 @@
-import { HexColor, TokenColorRules } from '.'
+import { HexColor, TokenColorRules } from '.';
 
 
 export interface Theme {
-	type: 'vs' | 'vs-dark'
-	name: string
-	id: string
-	template: ThemeTemplate
-	colors: { [key in ColorToken]: HexColor }
+	type: 'vs' | 'vs-dark';
+	name: string;
+	id: string;
+	template: ThemeTemplate;
+	colors: { [key in ColorToken]: HexColor };
 }
 
 
 export interface ThemeTemplate {
-	workbench: { [key: string]: ColorToken | `${ColorToken} / ${number}` }
-	tokens: TokenColorRules[]
+	workbench: { [key: string]: ColorToken | `${ColorToken} / ${number}`; };
+	tokens: TokenColorRules[];
 }
 
 
 export type ColorToken =
 	| 'code.blue'
 	| 'code.comment'
-	| 'editor.cursor.bg'
-	| 'editor.cursor.fg'
 	| 'code.green'
 	| 'code.orange'
 	| 'code.pink'
@@ -31,14 +29,18 @@ export type ColorToken =
 	| 'editor.bg.hover'
 	| 'editor.bg'
 	| 'editor.border'
+	| 'editor.cursor.bg'
+	| 'editor.cursor.fg'
 	| 'editor.fg'
+	| 'editor.find.match.bg'
+	| 'editor.find.match.border'
+	| 'editor.find.range'
 	| 'editor.gutter.active'
 	| 'editor.gutter'
 	| 'editor.mg'
+	| 'editor.peek.bg'
 	| 'editor.selection'
-	| 'editor.find.range'
-	| 'editor.find.match.bg'
-	| 'editor.find.match.border'
+	| 'shadow'
 	| 'ui.accent.bg.hover'
 	| 'ui.accent.bg'
 	| 'ui.accent.fg'
@@ -56,4 +58,6 @@ export type ColorToken =
 	| 'ui.focus'
 	| 'ui.mg.less'
 	| 'ui.mg'
-	| 'shadow'
+	| 'ui.scrollbar.hover'
+	| 'ui.scrollbar'
+	;

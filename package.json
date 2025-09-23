@@ -1,23 +1,16 @@
 {
 	"name": "turtle-theme",
-	"displayName": "Turtle Theme Collection",
-	"version": "4.0.3",
-	"description": "A collection of themes by a turtle, for turtles",
-	"publisher": "CiberTurtle",
-	"icon": "images/icon.png",
-	"license": "MIT",
-	"bugs": "https://github.com/CiberTurtle/Turtle-Theme/issues",
+	"version": "4.0.4",
 	"repository": "https://github.com/CiberTurtle/Turtle-Theme",
-	"galleryBanner": {
-		"color": "#cd6093",
-		"theme": "dark"
+	"devDependencies": {
+		"@types/node": "20.12.5",
+		"@vscode/vsce": "3.6.1",
+		"typescript": "5.4.4"
 	},
+	"bugs": "https://github.com/CiberTurtle/Turtle-Theme/issues",
 	"categories": [
 		"Themes"
 	],
-	"engines": {
-		"vscode": "^1.63.0"
-	},
 	"contributes": {
 		"themes": [
 			{
@@ -46,15 +39,22 @@
 			}
 		]
 	},
+	"description": "A collection of themes by a turtle, for turtles",
+	"displayName": "Turtle Theme Collection",
+	"engines": {
+		"vscode": "^1.63.0"
+	},
+	"galleryBanner": {
+		"color": "#cd6093",
+		"theme": "dark"
+	},
+	"icon": "images/icon.png",
+	"license": "MIT",
+	"publisher": "CiberTurtle",
 	"scripts": {
 		"build": "bun src/build.ts",
 		"pack": "mkdir -p dist && vsce pack -o dist",
 		"release": "vsce publish",
 		"dogfood": "vsce pack -o dist/dogfood.vsix && code --install-extension dist/dogfood.vsix --force"
-	},
-	"devDependencies": {
-		"@types/node": "20.12.5",
-		"@vscode/vsce": "2.24.0",
-		"typescript": "5.4.4"
 	}
 }
