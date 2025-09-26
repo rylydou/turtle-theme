@@ -1,8 +1,9 @@
-scripts/
-dist/
-.vscode/**
 .vscode-test/**
+.vscode/**
+bin/**
+node_modules/**
+src/**
 
-pnpm-lock.yaml
-tsconfig.json
 .gitignore
+bun.lockb
+tsconfig.json

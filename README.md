@@ -6,20 +6,17 @@ _**“A collection of themes by a turtle, for turtles.”**_
 ## The Themes in this Collection
 
 ### Zughy Dark
-![A screenshot of the "Zughy Dark" theme](images/zughy-dark.png)
-> The primary theme of the collection.
-
-### Zughy Paper
-![A screenshot of the "Zughy Paper" theme](images/zughy-paper.png)
-> Great for on the go coding where screen glare can become a serious problem!
+![A screenshot of the "Zughy Dark" theme](images/themes/zughy-dark.webp)
 
 ### Zughy Light
-![A screenshot of the "Zughy Light" theme](images/zughy-light.png)
-> Same as Zughy Paper, but with background colors from Solarized Light.
+![A screenshot of the "Zughy Light" theme](images/themes/zughy-light.webp)
 
-### Classic
-![A screenshot of the "Classic" theme](images/classic.png)
-> Note: Classic theme is no longer maintained. It's the original theme but looked too ugly to be updated.
+### Monokai Dark
+![A screenshot of the "Monokai Dark" theme](images/themes/monokai-dark.webp)
+
+### Monokai Light
+![A screenshot of the "Monokai Light" theme](images/themes/monokai-light.webp)
+
 
 
 ## Consistent Syntax Color!
@@ -34,10 +31,5 @@ _**“A collection of themes by a turtle, for turtles.”**_
 
 ## Credits
 
-### Zughy
+- [Monokai Pro](https://monokai.pro) for Monokai theme colors.
 - [Zughy 32](https://lospec.com/palette-list/zughy-32) for the color palette.
-
-### Classic
-- [Community Material Theme (deprecated)](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-community-material-theme)
-  for the syntax highlighting colors.
-- [Monokai Pro](https://monokai.pro) for terminal colors.

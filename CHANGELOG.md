@@ -1,5 +1,9 @@
 # Change Log
 
+## `5.0.0` - 2025-9-26
+- Added two new theme: Monokai Dark and Monokai Light
+- New flatter style
+
 
 ## `4.0.3` - 2024-4-8
 - Fix JSX coloring

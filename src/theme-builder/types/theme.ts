@@ -1,4 +1,4 @@
-import { HexColor, TokenColorRules } from '.';
+import { type TokenColorRules } from '.';
 
 
 export interface Theme {
@@ -6,7 +6,7 @@ export interface Theme {
 	name: string;
 	id: string;
 	template: ThemeTemplate;
-	colors: { [key in ColorToken]: HexColor };
+	colors: { [key in ColorToken]: string };
 }
 
 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: transparent;
+			display: grid;
+			place-items: center;
+			margin: 0;
+			height: 100vh;
+		}
+
+		.editor {
+			padding-left: 4px;
+			padding-right: 1rem;
+			background-color: #000000;
+			color: #ffffff;
+			border: solid 1px #202020;
+			border-radius: 12px;
+			box-shadow: 0 0.5rem 1.5rem #0004;
+		}
+
+		li::marker {
+			color: #303030;
+		}
+
+		.indent {
+			color: #303030;
+			width: 8px;
+			display: inline-block;
+
+			&::after {
+				/* content: "⟶"; */
+			}
+		}
+
+		.comment {
+			color: green;
+		}
+
+		.punc {
+			color: #808080;
+		}
+
+		.punc-less {
+			color: #404040;
+		}
+
+		.keyword {
+			color: #ff0000;
+			font-style: italic;
+		}
+
+		.orange {
+			color: #ffbb00;
+		}
+
+		.string {
+			color: #ffff00;
+		}
+
+		.func {
+			color: #00ff00;
+		}
+
+		.class {
+			color: #00ffff;
+		}
+
+		.number {
+			color: #ff00ff;
+		}
+
+		.this {
+			color: #aaaaaa;
+		}
+	</style>
+</head>
+
+<body>
+	<code class="editor">
+	<ol>
+		<li>
+			<span class="comment">// An exceptionally useful comment</span> <span></span>
+		</li>
+		<li>
+			<span class="keyword">export default class</span>
+			<span class="class">Theme</span>
+			<span class="punc">{</span>
+		</li>
+		<li>
+			<div class="indent"></div>
+			<span class="keyword">constructor</span><span class="punc">() {</span>
+		</li>
+		<li>
+			<div class="indent"></div>
+			<div class="indent"></div>
+			<span class="this">this</span><span class="punc">.</span><span class="">name</span>
+			<span class="keyword">=</span>
+			<span class="punc">'</span><span class="string">Theme Name</span><span class="punc">'</span><span class="punc-less">;</span>
+		</li>
+		<li>
+			<div class="indent"></div>
+			<div class="indent"></div>
+			<span class="this">this</span><span class="punc">.</span><span class="">from</span>
+			<span class="keyword">=</span>
+			<span class="punc">'</span><span class="string">Turtle Theme</span><span class="punc">'</span><span class="punc-less">;</span>
+		</li>
+		<li>
+			<div class="indent"></div>
+			<div class="indent"></div>
+			<span class="this">this</span><span class="punc">.</span><span class="">version</span>
+			<span class="keyword">=</span>
+			<span class="punc">[</span>
+			<span class="number">{major}</span><span class="punc-less">,</span>
+			<span class="number">{minor}</span><span class="punc-less">,</span>
+			<span class="number">{patch}</span>
+			<span class="punc">]</span><span class="punc-less">;</span>
+		</li>
+		<li>
+			<div class="indent"></div>
+			<span class="punc">}</span>
+		</li>
+		
+		<li><div class="indent"></div></li>
+		
+		<li>
+			<div class="indent"></div>
+			<span class="func">printInfo</span><span class="punc">() {</span>
+		</li>
+		<li>
+			<div class="indent"></div>
+			<div class="indent"></div>
+			<span class="keyword">let</span>
+			<span class="">semver</span>
+			<span class="keyword">=</span>
+			<span class="this">this</span><span class="punc">.</span><span class="">version</span><span class="punc">.</span><span class="func">join</span><span class="punc">{'</span><span class="string">.</span><span class="punc">')</span><span class="punc-less">;</span>
+		</li>
+		<li>
+			<div class="indent"></div>
+			<div class="indent"></div>
+			<span class="">semver</span><span class="punc">.</span><span class="func">log</span><span class="punc">(`${</span><span class="this">this</span><span class="punc">.</span><span class="">name</span><span class="punc">}</span>
+			<span class="string">from Turtle Theme</span><span class="number">\n\t</span><span class="punc">${</span><span class="">semver</span><span class="punc">}`)</span><span class="punc-less">;</span>
+		</li>
+		<li>
+			<div class="indent"></div>
+			<span class="punc">}</span>
+		</li>
+		<li>
+			<span class="punc">}</span><span class="punc-less">;</span>
+		</li>
+	</ol>
+	</code>
+</body>
+
+</html>

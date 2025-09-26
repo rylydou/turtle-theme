@@ -1,60 +1,70 @@
 {
 	"name": "turtle-theme",
-	"version": "4.0.4",
-	"repository": "https://github.com/CiberTurtle/Turtle-Theme",
-	"devDependencies": {
-		"@types/node": "20.12.5",
-		"@vscode/vsce": "3.6.1",
-		"typescript": "5.4.4"
-	},
-	"bugs": "https://github.com/CiberTurtle/Turtle-Theme/issues",
+	"displayName": "Turtle Theme Collection",
+	"version": "5.0.2",
+	"publisher": "CiberTurtle",
+	"description": "A collection of themes by a turtle, for turtles",
+	"icon": "images/icon.png",
+	"repository": "https://github.com/rylydou/turtle-theme",
+	"bugs": "https://github.com/rylydou/turtle-theme/issues",
+	"homepage": "https://github.com/rylydou/turtle-theme",
+	"license": "MIT",
 	"categories": [
 		"Themes"
 	],
+	"keywords": [
+		"icons",
+		"sharp",
+		"icon theme",
+		"customization",
+		"theme",
+		"file icons"
+	],
+	"galleryBanner": {
+		"color": "#cd6093",
+		"theme": "dark"
+	},
+	"engines": {
+		"vscode": "^1.0.0"
+	},
 	"contributes": {
 		"themes": [
 			{
-				"id": "zughy-dark",
 				"label": "Turtle Theme - Zughy Dark",
 				"uiTheme": "vs-dark",
 				"path": "./themes/zughy-dark.json"
 			},
 			{
-				"id": "zughy-light",
 				"label": "Turtle Theme - Zughy Light",
 				"uiTheme": "vs",
 				"path": "./themes/zughy-light.json"
 			},
 			{
-				"id": "zughy-paper",
-				"label": "Turtle Theme - Zughy Paper",
-				"uiTheme": "vs",
-				"path": "./themes/zughy-paper.json"
+				"label": "Turtle Theme - Monokai Dark",
+				"uiTheme": "vs-dark",
+				"path": "./themes/monokai-dark.json"
 			},
 			{
-				"id": "classic",
-				"label": "Turtle Theme - Classic (unmaintained)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/classic.json"
+				"label": "Turtle Theme - Monokai Light",
+				"uiTheme": "vs",
+				"path": "./themes/monokai-light.json"
 			}
 		]
 	},
-	"description": "A collection of themes by a turtle, for turtles",
-	"displayName": "Turtle Theme Collection",
-	"engines": {
-		"vscode": "^1.63.0"
+	"devDependencies": {
+		"@types/bun": "^1.2.22",
+		"@types/node": "^24.5.2",
+		"@vscode/vsce": "^3.6.2",
+		"ovsx": "^0.10.5",
+		"puppeteer": "^24.22.3",
+		"typescript": "^5.9.2"
 	},
-	"galleryBanner": {
-		"color": "#cd6093",
-		"theme": "dark"
-	},
-	"icon": "images/icon.png",
-	"license": "MIT",
-	"publisher": "CiberTurtle",
 	"scripts": {
-		"build": "bun src/build.ts",
-		"pack": "mkdir -p dist && vsce pack -o dist",
-		"release": "vsce publish",
-		"dogfood": "vsce pack -o dist/dogfood.vsix && code --install-extension dist/dogfood.vsix --force"
+		"build": "bun src/theme-builder",
+		"pack": "npm run build && mkdir -p bin && vsce package -o bin/turtle-theme.vsix",
+		"publish-all": "npm run build && bun run publish-ms && bun run publish-oss",
+		"publish-ms": "vsce publish -i bin/turtle-theme.vsix",
+		"publish-oss": "ovsx publish -i bin/turtle-thpeme.vsix",
+		"dogfood": "vsce pack -o bin/turtle-theme.vsix && code --install-extension bin/turtle-theme.vsix --force"
 	}
 }
