@@ -8,6 +8,6 @@ export default class Theme {
 
 	printInfo() {
 		let semver = this.version.join('.');
-		console.log(`${this.name} from Turtle Theme\n\t${semver}`);
+		console.log(`${this.name} from ${this.from}\n\t${semver}`);
 	}
 };

@@ -1,8 +1,8 @@
 {
 	"name": "turtle-theme",
 	"displayName": "Turtle Theme Collection",
-	"version": "5.0.2",
-	"publisher": "CiberTurtle",
+	"version": "5.0.3",
+	"publisher": "rylydou",
 	"description": "A collection of themes by a turtle, for turtles",
 	"icon": "images/icon.png",
 	"repository": "https://github.com/rylydou/turtle-theme",

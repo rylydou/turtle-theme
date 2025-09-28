@@ -51,8 +51,6 @@ export type ColorToken =
 	| 'ui.bg.hover'
 	| 'ui.bg'
 	| 'ui.border'
-	| 'ui.debug.bg'
-	| 'ui.debug.fg'
 	| 'ui.drop'
 	| 'ui.fg'
 	| 'ui.focus'

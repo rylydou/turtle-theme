@@ -1,5 +1,10 @@
 # Change Log
 
+## `5.0.3` - 2025-9-27
+- Readded dual color themes
+- Added colors for merge editor
+
+
 ## `5.0.0` - 2025-9-26
 - Added two new theme: Monokai Dark and Monokai Light
 - New flatter style

@@ -1,6 +1,7 @@
 name: "Zughy Light"
 type: "vs"
 template: standard
+
 colors:
   code.blue: "#3978a8"
   code.comment: "#397b44"
@@ -17,8 +18,6 @@ colors:
   editor.cursor.bg: "#ffffff"
   editor.cursor.fg: "#000000"
   editor.fg: "#302c2e"
-  editor.find.match.bg: "#ffffff"
-  editor.find.match.border: "#8aebf1"
   editor.find.range: "#eea160"
   editor.gutter.active: "#eea160"
   editor.gutter: "#f4cca1"
@@ -35,8 +34,6 @@ colors:
   ui.bg.hover: "#fdf6e3"
   ui.bg: "#eee8d5"
   ui.border: "#ded8c5"
-  ui.debug.bg: "#564064"
-  ui.debug.fg: "#cfc6b8"
   ui.drop: "#a93b3b40"
   ui.fg: "#302c2e"
   ui.focus: "#a93b3b"
