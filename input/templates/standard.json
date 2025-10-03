@@ -154,7 +154,7 @@
 		"list.activeSelectionForeground": "ui.fg",
 		"list.activeSelectionIconForeground": "ui.mg",
 		"list.dropBackground": "ui.drop",
-		"list.highlightForeground": "ui.accent",
+		"list.highlightForeground": "ui.accent.hover",
 		"list.hoverBackground": "ui.bg.hover",
 		"list.inactiveSelectionBackground": "ui.bg.active",
 		"list.inactiveSelectionForeground": "ui.fg",

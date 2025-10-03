@@ -1,5 +1,10 @@
 # Change Log
 
+
+## `5.0.4` - 2025-9-29
+- Tweaked some colors
+
+
 ## `5.0.3` - 2025-9-27
 - Readded dual color themes
 - Added colors for merge editor
