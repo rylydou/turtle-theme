@@ -1,7 +1,7 @@
 {
 	"name": "turtle-theme",
 	"displayName": "Turtle Theme Collection",
-	"version": "5.0.4",
+	"version": "5.0.5",
 	"publisher": "CiberTurtle",
 	"description": "A collection of themes by a turtle, for turtles",
 	"icon": "images/icon.png",
@@ -52,19 +52,19 @@
 		]
 	},
 	"devDependencies": {
-		"@types/bun": "^1.2.22",
-		"@types/node": "^24.5.2",
-		"@vscode/vsce": "^3.6.2",
-		"ovsx": "^0.10.5",
-		"puppeteer": "^24.22.3",
-		"typescript": "^5.9.2"
+		"@types/bun": "^1.3.2",
+		"@types/node": "^24.10.1",
+		"@vscode/vsce": "^3.7.0",
+		"ovsx": "^0.10.6",
+		"puppeteer": "^24.30.0",
+		"typescript": "^5.9.3"
 	},
 	"scripts": {
 		"build": "bun src/theme-builder",
 		"pack": "npm run build && mkdir -p bin && vsce package -o bin/turtle-theme.vsix",
 		"publish-all": "npm run build && bun run publish-ms && bun run publish-oss",
-		"publish-ms": "vsce publish -i bin/turtle-theme.vsix",
-		"publish-oss": "ovsx publish -i bin/turtle-thpeme.vsix",
+		"publish-ms": "vsce publish",
+		"publish-oss": "ovsx publish",
 		"dogfood": "vsce pack -o bin/turtle-theme.vsix && code --install-extension bin/turtle-theme.vsix --force"
 	}
 }
