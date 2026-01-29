@@ -208,6 +208,7 @@
 		"peekViewTitleLabel.foreground": "ui.fg",
 		"pickerGroup.border": "editor.border",
 		"pickerGroup.foreground": "ui.accent",
+		"progressBar.background": "ui.accent",
 		"quickInput.background": "editor.bg",
 		"quickInput.foreground": "editor.fg",
 		"quickInputList.focusBackground": "ui.accent.bg",
