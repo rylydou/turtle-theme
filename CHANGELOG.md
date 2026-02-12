@@ -1,6 +1,10 @@
 # Change Log
 
 
+## 5.0.7 - 2026-2-11
+- Added Makefile specific colors
+
+
 ## `5.0.4` - 2025-9-29
 - Tweaked some colors
 

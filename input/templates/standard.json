@@ -310,6 +310,7 @@
 			"name": "Escaped String Characters",
 			"scope": [
 				"constant.character",
+				"variable.language.makefile",
 			],
 			"settings": {
 				"foreground": "code.pink",
@@ -368,6 +369,7 @@
 				"keyword.type",
 				"meta.function",
 				"support",
+				"variable.other.makefile",
 			],
 			"settings": {
 				"foreground": "code.blue",
@@ -423,6 +425,7 @@
 				"meta.tag.start",
 				"meta.tag.structure.end",
 				"meta.tag.structure.start",
+				"punctuation.definition.variable.makefile",
 			],
 			"settings": {
 				"foreground": "code.red",
@@ -448,6 +451,7 @@
 				"punctuation.terminator",
 				"meta.function.parameters.gdscript",
 				"meta.function.gdscript",
+				"keyword.control.@.makefile",
 			],
 			"settings": {
 				"foreground": "code.punctuation.less",
