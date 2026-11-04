@@ -1,7 +1,14 @@
 # Change Log
 
 
-## 5.0.7 - 2026-2-11
+## `5.1.0`
+- Fixed the merge editor's common-ancestor pane having a bright red background
+- Fixed changed submodules in the explorer showing bright red instead of yellow
+- Fixed the highlight on other occurrences of the selected text: it was opaque yellow in Monokai Dark, and an invalid color (so VS Code's default was used) in the Light themes
+- Smaller download: preview images are no longer bundled with the extension
+
+
+## `5.0.7` - 2026-2-11
 - Added Makefile specific colors
 
 
