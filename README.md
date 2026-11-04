@@ -6,16 +6,16 @@ _**“A collection of themes by a turtle, for turtles.”**_
 ## The Themes in this Collection
 
 ### Zughy Dark
-![A screenshot of the "Zughy Dark" theme](images/themes/zughy-dark.webp)
+![A screenshot of the "Zughy Dark" theme](images/themes/zughy-dark.png)
 
 ### Zughy Light
-![A screenshot of the "Zughy Light" theme](images/themes/zughy-light.webp)
+![A screenshot of the "Zughy Light" theme](images/themes/zughy-light.png)
 
 ### Monokai Dark
-![A screenshot of the "Monokai Dark" theme](images/themes/monokai-dark.webp)
+![A screenshot of the "Monokai Dark" theme](images/themes/monokai-dark.png)
 
 ### Monokai Light
-![A screenshot of the "Monokai Light" theme](images/themes/monokai-light.webp)
+![A screenshot of the "Monokai Light" theme](images/themes/monokai-light.png)
 
 
 
